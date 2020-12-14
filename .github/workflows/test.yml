@@ -10,6 +10,5 @@ jobs:
       - uses: actions/checkout@v2
       - name: Test with docker-compose stack
         run: |
-          if [ -z "`docker network ls | grep "gotest-using-container-on-githubactions"`" ]; then docker network create gotest-using-container-on-githubactions; fi
           docker-compose up -d --remove-orphans
           docker exec app go test -cover -v ./...

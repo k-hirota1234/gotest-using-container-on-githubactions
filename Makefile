@@ -2,7 +2,6 @@ build:
 	docker-compose build
 
 up:
-	if [ -z "`docker network ls | grep gotest-using-container-on-githubactions`" ]; then docker network create gotest-using-container-on-githubactions; fi
 	docker-compose up -d --remove-orphans
 
 down:
