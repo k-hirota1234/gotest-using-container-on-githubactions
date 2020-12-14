@@ -1,4 +1,4 @@
-module github.com/shipyard-inc/gotest-using-container-on-githubactions
+module github.com/kskumgk63/gotest-using-container-on-githubactions
 
 go 1.15
 
