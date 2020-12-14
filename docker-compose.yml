@@ -14,8 +14,6 @@ services:
       PSQL_PASSWORD: psql_password
       PSQL_DATABASE: psql_database
       PSQL_SSLMODE: disable
-    networks:
-      - gotest-using-container-on-githubactions
     depends_on:
       - postgres
 
@@ -29,9 +27,3 @@ services:
       POSTGRES_USER: psql_user
       POSTGRES_PASSWORD: psql_password
       POSTGRES_DB: psql_database
-    networks:
-      - gotest-using-container-on-githubactions
-
-networks:
-  gotest-using-container-on-githubactions:
-    external: true
