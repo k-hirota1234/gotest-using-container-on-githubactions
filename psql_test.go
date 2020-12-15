@@ -22,7 +22,7 @@ func Test_psqlClient_ping(t *testing.T) {
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
 			err := tt.psqlClient.ping()
-			if err != nil {
+			if tt.wantErr != "" {
 				assert.EqualError(t, err, tt.wantErr)
 				return
 			}
