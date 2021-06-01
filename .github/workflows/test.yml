@@ -12,4 +12,3 @@ jobs:
         run: |
           docker-compose up -d --remove-orphans
           docker exec app go test -cover -v ./...
- 
