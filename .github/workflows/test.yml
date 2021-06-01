@@ -1,8 +1,9 @@
 name: test
 on:
-  pull_request:
-    branches:
-      - main
+   pusu:
+  #pull_request:
+  #  branches:
+  #    - main
 jobs:
   build:
     runs-on: ubuntu-latest
